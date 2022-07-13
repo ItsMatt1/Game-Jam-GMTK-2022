@@ -1,1 +1,1 @@
-# Game-Jame-GMTK-2022
+# Game-Jam-GMTK-2022
