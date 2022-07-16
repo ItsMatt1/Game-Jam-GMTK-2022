@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class teste : MonoBehaviour
+public class Player : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
 
@@ -21,10 +21,10 @@ public class teste : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      movement.x = Input.GetAxisRaw("Horizontal"); // `A` or `D` key
-      movement.y = Input.GetAxisRaw("Vertical"); // `W` or `S` key
+        movement.x = Input.GetAxisRaw("Horizontal"); // `A` or `D` key
+        movement.y = Input.GetAxisRaw("Vertical"); // `W` or `S` key
 
-      mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void FixedUpdate()
