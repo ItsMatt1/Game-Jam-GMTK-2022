@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private BoxCollider2D boxCollider2D;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,11 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Object.Destroy(gameObject);
+        if (other.gameObject.tag == "Bullet")
+        {
+          Object.Destroy(gameObject);
+          Object.Destroy(other.gameObject);
+          Score.instance.bodyCount++;
+        }
     }
 }
