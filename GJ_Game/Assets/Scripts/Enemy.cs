@@ -18,13 +18,14 @@ public class Enemy : MonoBehaviour
 
     }
 
+
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Bullet")
         {
-          Object.Destroy(gameObject);
-          Object.Destroy(other.gameObject);
-          Score.instance.bodyCount++;
+            Object.Destroy(gameObject);
+            Object.Destroy(other.gameObject);
+            Score.instance.bodyCount++;
         }
     }
 }

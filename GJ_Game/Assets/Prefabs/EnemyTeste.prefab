@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: -6604340390006517560}
   - component: {fileID: -2157118527052767834}
   - component: {fileID: 1979247449133994021}
-  m_Layer: 0
+  - component: {fileID: -4519525224229232468}
+  m_Layer: 6
   m_Name: EnemyTeste
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2839331986110747135}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4146726, y: -0.2578431, z: 0.07443976}
+  m_LocalPosition: {x: 1.4146726, y: -0.2578431, z: -1}
   m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6831cbbfa791e99438fc9bbaeb73829e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 64283563173929836, guid: ade81b05ba9828b48b137391e67f8ff7, type: 3}
 --- !u!61 &-2157118527052767834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +147,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &-4519525224229232468
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839331986110747135}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
