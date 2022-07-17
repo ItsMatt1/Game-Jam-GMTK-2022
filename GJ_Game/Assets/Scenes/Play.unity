@@ -889,11 +889,16 @@ MonoBehaviour:
     enemy: {fileID: 897115442668430127, guid: b1d4895a1afa29d4a869db94c42d4c28, type: 3}
     count: 5
     rate: 2
+  - name: Teste 4
+    enemy: {fileID: 897115442668430127, guid: b1d4895a1afa29d4a869db94c42d4c28, type: 3}
+    count: 6
+    rate: 1
   spawnPoints:
   - {fileID: 1113172057}
   - {fileID: 1021573578}
   - {fileID: 604738321}
-  timeBetweenWaves: 5
+  - {fileID: 1732885087}
+  timeBetweenWaves: 3
   waveCountdown: 0
 --- !u!4 &556638968
 Transform:
@@ -1445,3 +1450,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723651834}
   m_CullTransparentMesh: 1
+--- !u!1 &1732885086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732885087}
+  m_Layer: 0
+  m_Name: GameObject (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732885087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732885086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.94, y: -3.47, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
