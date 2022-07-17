@@ -13,13 +13,13 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      instance = this;
-      bodyCountText.text = $"BODY COUNT: {bodyCount}";
+        instance = this;
+        bodyCountText.text = $"SCORE: {bodyCount}";
     }
 
     // Update is called once per frame
     void Update()
     {
-        bodyCountText.text = $"BODY COUNT: {bodyCount}";
+        bodyCountText.text = $"SCORE: {bodyCount}";
     }
 }
