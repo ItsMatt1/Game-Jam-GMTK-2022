@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479d004b8e048344c9f797d09043151f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 0}
   movementSpeed: 5
   camera: {fileID: 0}
   maxHealth: 4

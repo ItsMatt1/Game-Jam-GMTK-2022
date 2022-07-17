@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D rigidbody2D;
+    public static Player instance;
+
+    public Rigidbody2D rigidbody2D;
 
     public float movementSpeed = 5f;
     public Camera camera;
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         rigidbody2D = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
