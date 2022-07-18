@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1154169413216624734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7985234328562989623}
+  - component: {fileID: -6645509350424070603}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7985234328562989623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154169413216624734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.2255473, y: 0.2455549, z: -0.99678963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6645509350424070603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154169413216624734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e94cd7fe266aa4c82795feb8afb2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - loop: 1
+    Name: Casino
+    clip: {fileID: 8300000, guid: 4ee9d3ae838e84a4dabca5b4e016ffff, type: 3}
+    Volume: 1
+    Pitch: 1
+    source: {fileID: 0}
+  - loop: 0
+    Name: Shot
+    clip: {fileID: 8300000, guid: cce1fece512c8de45a2fe19b9003028d, type: 3}
+    Volume: 1
+    Pitch: 1
+    source: {fileID: 0}
+  - loop: 0
+    Name: Dice
+    clip: {fileID: 8300000, guid: b4400fddc21cea24bb828d8936652c28, type: 3}
+    Volume: 1
+    Pitch: 1
+    source: {fileID: 0}

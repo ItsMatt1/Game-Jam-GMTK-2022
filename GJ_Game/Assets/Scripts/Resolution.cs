@@ -6,6 +6,6 @@ public class Resolution : MonoBehaviour
 {
     void Start()
     {
-        Screen.SetResolution(800, 600, true);
+        Screen.SetResolution(1920, 1080, true);
     }
 }
