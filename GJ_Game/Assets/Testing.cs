@@ -8,6 +8,6 @@ public class Testing : MonoBehaviour
 
     private void Start()
     {
-        Pathfinding pathfinding = new Pathfinding(10, 10);
+        Grid grid = new Grid(4, 2, 10f, new Vector3(0, 0));
     }
 }
