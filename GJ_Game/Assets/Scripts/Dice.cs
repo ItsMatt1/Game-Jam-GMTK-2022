@@ -18,17 +18,13 @@ public class Dice : MonoBehaviour
 
     public float timeStamp = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         instance = this;
 
-        // anim = GetComponent<Animator>();
-
         rend = GetComponent<SpriteRenderer>();
 
         diceSides = Resources.LoadAll<Sprite>("DiceSides/");
-
     }
 
     // Update is called once per frame
@@ -44,7 +40,6 @@ public class Dice : MonoBehaviour
 
                 StartCoroutine("RollTheDice");
                 timeStamp = Time.time + 3;
-
             }
         }
 

@@ -11,53 +11,52 @@ public class Shooting : MonoBehaviour
 
     public float bulletForce = 20f;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") /*&& Dice.instance.finalSide == 1*/)
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
 
-        /*if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 2)
-        {
-            Shoot();
-            Shoot();
-        }
+        // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 2)
+        // {
+        //     Shoot();
+        //     Shoot();
+        // }
 
-        if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 3)
-        {
-            Shoot();
-            Shoot();
-            Shoot();
-        }
+        // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 3)
+        // {
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        // }
 
-        if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 4)
-        {
-            Shoot();
-            Shoot();
-            Shoot();
-            Shoot();
-        }
+        // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 4)
+        // {
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        // }
 
-        if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 5)
-        {
-            Shoot();
-            Shoot();
-            Shoot();
-            Shoot();
-            Shoot();
-        }
+        // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 5)
+        // {
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        // }
 
-        if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 6)
-        {
-            Shoot();
-            Shoot();
-            Shoot();
-            Shoot();
-            Shoot();
-            Shoot();
-        }*/
+        // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 6)
+        // {
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        //     Shoot();
+        // }
     }
 
     void Shoot()
