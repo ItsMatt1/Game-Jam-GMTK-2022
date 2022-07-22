@@ -14,12 +14,12 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 1)
+        if (Input.GetButtonDown("Fire1") /*&& Dice.instance.finalSide == 1*/)
         {
             Shoot();
         }
 
-        if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 2)
+        /*if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 2)
         {
             Shoot();
             Shoot();
@@ -57,7 +57,7 @@ public class Shooting : MonoBehaviour
             Shoot();
             Shoot();
             Shoot();
-        }
+        }*/
     }
 
     void Shoot()

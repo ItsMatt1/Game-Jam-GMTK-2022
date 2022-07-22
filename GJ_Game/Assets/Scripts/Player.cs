@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     public int maxHealth = 4;
     public int currentHealth;
 
+    private Animator animator;
+
     public HealthBar healthBar;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -61,6 +64,13 @@ public class Player : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal"); // `A` or `D` key
         movement.y = Input.GetAxisRaw("Vertical"); // `W` or `S` key
+
+        if(movement.x == 0 && movement.y == 0)
+        {
+            animator.SetBool("IsMoving", false);
+        }else{
+            animator.SetBool("IsMoving", true);
+        }
 
         mousePosition = camera.ScreenToWorldPoint(Input.mousePosition);
     }
