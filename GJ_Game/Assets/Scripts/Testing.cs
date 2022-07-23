@@ -33,6 +33,19 @@ public class Testing : MonoBehaviour
     //     public HeatMapVisual(Grid grid)
     //     {
     //         this.grid = grid;
+
+    //         Vector3[] vertices;
+    //         Vector2[] uv;
+    //         int[] triangles;
+
+
+    //         for (int x = 0; x < grid.GetWidth(); x++)
+    //         {
+    //             for (int y = 0; y < grid.GetHeight(); y++)
+    //             {
+
+    //             }
+    //         }
     //     }
     // }
 }

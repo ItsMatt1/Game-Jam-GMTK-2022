@@ -38,7 +38,15 @@ public class Grid
         SetValue(1, 1, 56);
     }
 
+    public int GetWidth()
+    {
+        return width;
+    }
 
+    public int GetHeight()
+    {
+        return height;
+    }
 
     private Vector3 GetWorldPosition(int x, int y)
     {
