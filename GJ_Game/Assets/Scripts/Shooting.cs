@@ -11,12 +11,31 @@ public class Shooting : MonoBehaviour
 
     public float bulletForce = 20f;
 
+    private Animator animator;
+
+    public float timeStamp = 0;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (timeStamp <= Time.time)
         {
-            Shoot();
+            animator.SetBool("IsShooting", false);
+
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+                animator.SetBool("IsShooting", true);
+                timeStamp = Time.time + 0.2f;
+            }
         }
+
+
+
 
         // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 2)
         // {
@@ -58,7 +77,6 @@ public class Shooting : MonoBehaviour
         //     Shoot();
         // }
     }
-
     void Shoot()
     {
         AudioManager.instance.Play("Shot");
