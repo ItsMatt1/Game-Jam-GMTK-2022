@@ -13,7 +13,7 @@ public class Shooting : MonoBehaviour
 
     private Animator animator;
 
-    public float timeStamp = 0;
+    private float timeStamp = 0;
 
     void Start()
     {
