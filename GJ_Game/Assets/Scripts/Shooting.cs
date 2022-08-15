@@ -35,8 +35,6 @@ public class Shooting : MonoBehaviour
         }
 
 
-
-
         // if (Input.GetButtonDown("Fire1") && Dice.instance.finalSide == 2)
         // {
         //     Shoot();
